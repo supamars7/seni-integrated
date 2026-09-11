@@ -3,12 +3,14 @@ const mobileMenu = document.querySelector('.mobile-menu');
 
 menuToggle?.addEventListener('click', () => {
   const open = mobileMenu.classList.toggle('open');
+  menuToggle.classList.toggle('active', open);
   menuToggle.setAttribute('aria-expanded', String(open));
 });
 
 document.querySelectorAll('.mobile-menu a').forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('open');
+    menuToggle?.classList.remove('active');
     menuToggle?.setAttribute('aria-expanded', 'false');
   });
 });

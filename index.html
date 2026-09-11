@@ -6,69 +6,344 @@
   <meta name="description" content="Seni Integrated Systems — computer and telecoms engineering for connected, secure, high-performance operations." />
   <meta name="author" content="Seni Integrated Systems" />
   <meta name="theme-color" content="#161650" />
+  
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Seni Integrated Systems | Built for connection" />
   <meta property="og:description" content="Computer and telecoms engineering for connected, secure, high-performance operations." />
   <meta property="og:image" content="assets/image001.jpg" />
+  
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Seni Integrated Systems" />
   <meta name="twitter:description" content="Computer and telecoms engineering for connected, secure, high-performance operations." />
+  
   <link rel="icon" href="assets/logo.png" />
   <title>Seni Integrated Systems | Built for connection</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2.2" />
 </head>
 <body>
-  <div class="announcement"><span class="pulse"></span> Computer & telecoms engineering, designed around your next move <a href="#contact">Start a conversation <span>↗</span></a></div>
+  <div class="announcement">
+    <span class="pulse"></span>
+    <span>Computer &amp; telecoms engineering, designed around your next move</span>
+    <a href="#contact">Start a conversation <span>↗</span></a>
+  </div>
+
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Seni Integrated Systems home"><img src="assets/logo.png" alt="Seni Integrated Systems" /></a>
+    <a class="brand" href="#top" aria-label="Seni Integrated Systems home">
+      <img src="assets/logo.png" alt="Seni Integrated Systems logo" />
+    </a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#services">Capabilities</a><a href="#work">Work</a><a href="#approach">Our approach</a><a href="#about">About Seni</a><a href="#contact">Contact</a>
+      <a href="#services">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#approach">Our approach</a>
+      <a href="#about">About Seni</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a class="header-cta" href="#contact">Get in touch <span>↗</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
   </header>
-  <div class="mobile-menu"><a href="#services">Capabilities</a><a href="#work">Work</a><a href="#approach">Our approach</a><a href="#about">About Seni</a><a href="#contact">Contact</a></div>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="#services">Capabilities <span>↗</span></a>
+    <a href="#work">Work <span>↗</span></a>
+    <a href="#approach">Our approach <span>↗</span></a>
+    <a href="#about">About Seni <span>↗</span></a>
+    <a href="#contact">Contact <span>↗</span></a>
+  </nav>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero" aria-label="Seni Integrated Systems introduction">
-      <div class="hero-bg"></div><div class="hero-grid"></div>
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      
       <div class="hero-content container">
-        <p class="eyebrow light" id="heroEyebrow"><span class="eyebrow-line"></span> Telecoms &amp; connectivity</p>
+        <p class="eyebrow light" id="heroEyebrow">
+          <span class="eyebrow-line"></span> Telecoms &amp; connectivity
+        </p>
         <h1>Make every<br><em>connection</em> count.</h1>
-        <p class="hero-copy">We engineer the infrastructure behind confident businesses — from resilient networks to the hardware and support that keep teams moving.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#services">Explore our capabilities <span>↗</span></a><a class="text-link light-link" href="#about">Why Seni <span>→</span></a></div>
+        <p class="hero-copy">
+          We engineer the infrastructure behind confident businesses — from resilient networks to the hardware and support that keep teams moving.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Explore our capabilities <span>↗</span></a>
+          <a class="text-link light-link" href="#about">Why Seni <span>→</span></a>
+        </div>
       </div>
-      <div class="hero-meta container"><span>01 / 03</span><span class="hero-location">Lagos · Nigeria</span><div class="hero-lines"><i class="active"></i><i></i><i></i></div></div>
-      <button class="slider-arrow prev" aria-label="Previous slide">←</button><button class="slider-arrow next" aria-label="Next slide">→</button>
+
+      <div class="hero-meta container">
+        <span>01 / 03</span>
+        <span class="hero-location">Lagos · Nigeria</span>
+        <div class="hero-lines">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
+      </div>
+
+      <button class="slider-arrow prev" aria-label="Previous slide">←</button>
+      <button class="slider-arrow next" aria-label="Next slide">→</button>
     </section>
 
-    <section class="intro container" id="about"><div class="intro-statement"><p class="eyebrow"><span class="eyebrow-line"></span> A better connected world</p><h2>Technology should feel like an advantage, <span>not an obstacle.</span></h2></div><div class="intro-detail"><p>Seni Integrated Systems brings computer sales, engineering, fiber optics, connectivity and networking into one dependable partner. The result is less friction, clearer decisions and systems that are ready for what is next.</p><a class="text-link" href="#contact">Meet the team <span>→</span></a></div></section>
+    <!-- Intro Section -->
+    <section class="intro container section-pad" id="about">
+      <div class="intro-statement">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span> A better connected world
+        </p>
+        <h2>Technology should feel like an advantage, <span>not an obstacle.</span></h2>
+      </div>
+      <div class="intro-detail">
+        <p>
+          Seni Integrated Systems brings computer sales, engineering, fiber optics, connectivity and networking into one dependable partner. The result is less friction, clearer decisions and systems that are ready for what is next.
+        </p>
+        <a class="text-link" href="#contact">Meet the team <span>→</span></a>
+      </div>
+    </section>
 
-    <section class="services section-pad" id="services"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> What we do</p><h2>Infrastructure with<br><span>intent.</span></h2></div><p class="section-intro">From first connection to everyday reliability, our capabilities work together to give your operation a stronger foundation.</p></div><div class="service-grid">
-      <article class="service-card featured"><div class="card-top"><span class="service-number">01</span><span class="service-icon">◌</span></div><h3>Computer<br>sales</h3><p>Right-fit hardware and thoughtful procurement for teams that need performance without the guesswork.</p><a href="#contact" aria-label="Explore computer sales">↗</a></article>
-      <article class="service-card"><div class="card-top"><span class="service-number">02</span><span class="service-icon">⌁</span></div><h3>Computer<br>engineering</h3><p>Practical technical expertise that turns complex requirements into systems people can rely on.</p><a href="#contact" aria-label="Explore computer engineering">↗</a></article>
-      <article class="service-card"><div class="card-top"><span class="service-number">03</span><span class="service-icon">⌁</span></div><h3>Fiber<br>optics</h3><p>High-speed, cleanly delivered connectivity for distance, scale and always-on communication.</p><a href="#contact" aria-label="Explore fiber optics">↗</a></article>
-      <article class="service-card"><div class="card-top"><span class="service-number">04</span><span class="service-icon">◫</span></div><h3>Internet &<br>e-mail</h3><p>Stable digital access that helps your people communicate, collaborate and keep momentum.</p><a href="#contact" aria-label="Explore internet and email">↗</a></article>
-      <article class="service-card"><div class="card-top"><span class="service-number">05</span><span class="service-icon">⌘</span></div><h3>Networking</h3><p>Secure, scalable network environments that make the right information available at the right time.</p><a href="#contact" aria-label="Explore networking">↗</a></article>
-    </div></div></section>
+    <!-- Capabilities / Services Section -->
+    <section class="services section-pad" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> What we do
+            </p>
+            <h2>Infrastructure with<br><span>intent.</span></h2>
+          </div>
+          <p class="section-intro">
+            From first connection to everyday reliability, our capabilities work together to give your operation a stronger foundation.
+          </p>
+        </div>
 
-    <section class="proof section-pad"><div class="container proof-inner"><div class="proof-copy"><p class="eyebrow light"><span class="eyebrow-line"></span> The Seni difference</p><h2>Good systems<br>create <em>room.</em></h2><p>Room to focus. Room to grow. Room to build the next version of your business with confidence.</p></div><div class="stat-grid"><div class="stat"><strong><span class="counter" data-target="5">0</span><sup>+</sup></strong><span>Core capabilities</span></div><div class="stat"><strong><span class="counter" data-target="100">0</span><sup>%</sup></strong><span>Focused on reliability</span></div><div class="stat"><strong>24/7</strong><span>Connected thinking</span></div></div></div></section>
+        <div class="service-grid">
+          <article class="service-card featured">
+            <div class="card-top">
+              <span class="service-number">01</span>
+              <span class="service-icon">◌</span>
+            </div>
+            <h3>Computer<br>sales</h3>
+            <p>Right-fit hardware and thoughtful procurement for teams that need performance without the guesswork.</p>
+            <a href="#contact" aria-label="Explore computer sales">↗</a>
+          </article>
 
-    <section class="approach section-pad" id="approach"><div class="container approach-layout"><div class="approach-title"><p class="eyebrow"><span class="eyebrow-line"></span> How we work</p><h2>Clear thinking.<br><span>Solid delivery.</span></h2></div><div class="steps"><div class="step"><span>01</span><div><h3>Listen first</h3><p>We start with the real shape of your operation, not a pre-set package.</p></div></div><div class="step"><span>02</span><div><h3>Design simply</h3><p>We turn the moving parts into an infrastructure plan that is easy to understand.</p></div></div><div class="step"><span>03</span><div><h3>Stay connected</h3><p>We deliver with care and stay close as your needs evolve.</p></div></div></div></div></section>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="service-number">02</span>
+              <span class="service-icon">⌁</span>
+            </div>
+            <h3>Computer<br>engineering</h3>
+            <p>Practical technical expertise that turns complex requirements into systems people can rely on.</p>
+            <a href="#contact" aria-label="Explore computer engineering">↗</a>
+          </article>
 
-    <section class="work section-pad" id="work"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Selected work</p><h2>Proof in<br><span>the field.</span></h2></div><p class="section-intro">A look at the telecoms and IT infrastructure we have engineered for teams that depend on staying connected.</p></div><div class="work-grid">
-      <article class="work-card"><img src="assets/image001.jpg" alt="Telecoms and connectivity infrastructure delivered by Seni Integrated Systems" loading="lazy" /><div class="work-body"><span class="work-tag">Telecoms &amp; connectivity</span><h3>Resilient network rollouts</h3><p>End-to-end connectivity projects that keep operations online across sites, branches and distributed teams.</p></div></article>
-      <article class="work-card"><img src="assets/image002.jpg" alt="Computer engineering and systems integration by Seni Integrated Systems" loading="lazy" /><div class="work-body"><span class="work-tag">Computer engineering</span><h3>Systems &amp; hardware integration</h3><p>Right-fit hardware, servers and workstations engineered, deployed and supported for real production workloads.</p></div></article>
-      <article class="work-card"><img src="assets/image003.jpg" alt="Fiber optics and secure networking infrastructure by Seni Integrated Systems" loading="lazy" /><div class="work-body"><span class="work-tag">Networks &amp; fiber</span><h3>Fiber &amp; secure networking</h3><p>High-speed fiber and secure network environments built to scale safely with the business.</p></div></article>
-    </div></div></section>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="service-number">03</span>
+              <span class="service-icon">⌁</span>
+            </div>
+            <h3>Fiber<br>optics</h3>
+            <p>High-speed, cleanly delivered connectivity for distance, scale and always-on communication.</p>
+            <a href="#contact" aria-label="Explore fiber optics">↗</a>
+          </article>
 
-    <section class="contact section-pad" id="contact"><div class="container contact-card"><div><p class="eyebrow light"><span class="eyebrow-line"></span> Start a conversation</p><h2>Ready to make<br>your next move?</h2></div><div class="contact-side"><p>Tell us where you want to go. We’ll help you build the connection to get there.</p><form class="contact-form" id="contactForm" novalidate><div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" placeholder="Your name" required /></div><div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" placeholder="you@company.com" required /></div><div class="field"><label for="cf-company">Company <span>(optional)</span></label><input id="cf-company" name="company" type="text" placeholder="Company" /></div><div class="field"><label for="cf-message">How can we help?</label><textarea id="cf-message" name="message" rows="3" placeholder="Tell us about your project" required></textarea></div><button class="button button-accent" type="submit">Send enquiry <span>↗</span></button></form><div class="contact-details"><span>ahmadu.olumide@senintegrated.com</span><span>senintegrated.com</span></div></div></div></section>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="service-number">04</span>
+              <span class="service-icon">◫</span>
+            </div>
+            <h3>Internet &amp;<br>e-mail</h3>
+            <p>Stable digital access that helps your people communicate, collaborate and keep momentum.</p>
+            <a href="#contact" aria-label="Explore internet and email">↗</a>
+          </article>
+
+          <article class="service-card">
+            <div class="card-top">
+              <span class="service-number">05</span>
+              <span class="service-icon">⌘</span>
+            </div>
+            <h3>Networking</h3>
+            <p>Secure, scalable network environments that make the right information available at the right time.</p>
+            <a href="#contact" aria-label="Explore networking">↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof / Stats Section -->
+    <section class="proof section-pad">
+      <div class="container proof-inner">
+        <div class="proof-copy">
+          <p class="eyebrow light">
+            <span class="eyebrow-line"></span> The Seni difference
+          </p>
+          <h2>Good systems<br>create <em>room.</em></h2>
+          <p>Room to focus. Room to grow. Room to build the next version of your business with confidence.</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat">
+            <strong><span class="counter" data-target="5">0</span><sup>+</sup></strong>
+            <span>Core capabilities</span>
+          </div>
+          <div class="stat">
+            <strong><span class="counter" data-target="100">0</span><sup>%</sup></strong>
+            <span>Focused on reliability</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Connected thinking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach section-pad" id="approach">
+      <div class="container approach-layout">
+        <div class="approach-title">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span> How we work
+          </p>
+          <h2>Clear thinking.<br><span>Solid delivery.</span></h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span>01</span>
+            <div>
+              <h3>Listen first</h3>
+              <p>We start with the real shape of your operation, not a pre-set package.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <div>
+              <h3>Design simply</h3>
+              <p>We turn the moving parts into an infrastructure plan that is easy to understand.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <div>
+              <h3>Stay connected</h3>
+              <p>We deliver with care and stay close as your needs evolve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work / Proof in the field Section -->
+    <section class="work section-pad" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> Selected work
+            </p>
+            <h2>Proof in<br><span>the field.</span></h2>
+          </div>
+          <p class="section-intro">
+            A look at the telecoms and IT infrastructure we have engineered for teams that depend on staying connected.
+          </p>
+        </div>
+        
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-image-wrap">
+              <img src="assets/image001.jpg" alt="Telecoms and connectivity infrastructure delivered by Seni Integrated Systems" loading="lazy" />
+            </div>
+            <div class="work-body">
+              <span class="work-tag">Telecoms &amp; connectivity</span>
+              <h3>Resilient network rollouts</h3>
+              <p>End-to-end connectivity projects that keep operations online across sites, branches and distributed teams.</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-image-wrap">
+              <img src="assets/image002.jpg" alt="Computer engineering and systems integration by Seni Integrated Systems" loading="lazy" />
+            </div>
+            <div class="work-body">
+              <span class="work-tag">Computer engineering</span>
+              <h3>Systems &amp; hardware integration</h3>
+              <p>Right-fit hardware, servers and workstations engineered, deployed and supported for real production workloads.</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-image-wrap">
+              <img src="assets/image003.jpg" alt="Fiber optics and secure networking infrastructure by Seni Integrated Systems" loading="lazy" />
+            </div>
+            <div class="work-body">
+              <span class="work-tag">Networks &amp; fiber</span>
+              <h3>Fiber &amp; secure networking</h3>
+              <p>High-speed fiber and secure network environments built to scale safely with the business.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-pad" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow light">
+            <span class="eyebrow-line"></span> Start a conversation
+          </p>
+          <h2>Ready to make<br>your next move?</h2>
+        </div>
+        
+        <div class="contact-side">
+          <p>Tell us where you want to go. We’ll help you build the connection to get there.</p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" placeholder="you@company.com" required />
+            </div>
+            <div class="field">
+              <label for="cf-company">Company <span>(optional)</span></label>
+              <input id="cf-company" name="company" type="text" placeholder="Company" />
+            </div>
+            <div class="field">
+              <label for="cf-message">How can we help?</label>
+              <textarea id="cf-message" name="message" rows="3" placeholder="Tell us about your project" required></textarea>
+            </div>
+            <button class="button button-accent" type="submit">Send enquiry <span>↗</span></button>
+          </form>
+          
+          <div class="contact-details">
+            <span>ahmadu.olumide@senintegrated.com</span>
+            <span>senintegrated.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><img src="assets/logo.png" alt="Seni Integrated Systems" /><span>Computer & telecoms engineering</span><div class="footer-links"><a href="#top">Back to top ↑</a><span>© <span id="year"></span> Seni Integrated Systems</span></div></div></footer>
-  <div class="toast" role="status">Thanks — your message is on its way.</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="Seni Integrated Systems" />
+      <span>Computer &amp; telecoms engineering</span>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+        <span>© <span id="year"></span> Seni Integrated Systems</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite">Thanks — your message is on its way.</div>
   <script src="script.js"></script>
 </body>
 </html>
