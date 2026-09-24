@@ -40,12 +40,14 @@ function goToSlide(index) {
   const meta = document.querySelector('.hero-meta>span');
   if (meta) meta.textContent = `0${currentSlide + 1} / 0${slideData.length}`;
 }
-goToSlide(0);
-document.querySelector('.slider-arrow.next')?.addEventListener('click', () => goToSlide(currentSlide + 1));
-document.querySelector('.slider-arrow.prev')?.addEventListener('click', () => goToSlide(currentSlide - 1));
-let sliderTimer = setInterval(() => goToSlide(currentSlide + 1), 7000);
-hero?.addEventListener('mouseenter', () => clearInterval(sliderTimer));
-hero?.addEventListener('mouseleave', () => { sliderTimer = setInterval(() => goToSlide(currentSlide + 1), 7000); });
+if (hero) {
+  goToSlide(0);
+  document.querySelector('.slider-arrow.next')?.addEventListener('click', () => goToSlide(currentSlide + 1));
+  document.querySelector('.slider-arrow.prev')?.addEventListener('click', () => goToSlide(currentSlide - 1));
+  let sliderTimer = setInterval(() => goToSlide(currentSlide + 1), 7000);
+  hero.addEventListener('mouseenter', () => clearInterval(sliderTimer));
+  hero.addEventListener('mouseleave', () => { sliderTimer = setInterval(() => goToSlide(currentSlide + 1), 7000); });
+}
 
 document.querySelectorAll('.counter').forEach((counter) => {
   const target = Number(counter.dataset.target);
@@ -72,7 +74,8 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
 const contactForm = document.getElementById('contactForm');
 const toast = document.querySelector('.toast');
